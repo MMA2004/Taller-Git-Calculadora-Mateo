@@ -4,7 +4,7 @@ def game():
     while True:
         print('======== Menu ========'
               '\n1. Add'
-              '\n2. Res'
+              '\n2. Rest'
               '\n0. Exit')
         option = int(input('\nChoice an option: '))
         if option == 0:

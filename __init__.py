@@ -1,4 +1,4 @@
-from operations import add, rest, mult, div, pot
+from operations import add, rest, mult, div, pot, mod
 def game():
     score = 0
     while True:
@@ -8,6 +8,7 @@ def game():
               '\n3. Mult'
               '\n4. Div'
               '\n5. Pot'
+              '\n6. Mod'
               '\n0. Exit')
         option = int(input('\nChoice an option: '))
         if option == 0:
@@ -48,8 +49,16 @@ def game():
             else:
                 print('Incorrect')
 
-        if option == 4:
+        if option == 5:
             result = pot(num_1, num_2)
+            if result == answer:
+                score += 1
+                print('Correct!!')
+            else:
+                print('Incorrect')
+
+        if option == 6:
+            result = mod(num_1, num_2)
             if result == answer:
                 score += 1
                 print('Correct!!')

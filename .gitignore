@@ -1,0 +1,17 @@
+.DS_Store
+*.idea
+*.iml
+*.ipr
+*.iws
+*.swap
+target/
+.settings
+.classpath
+.project
+build/*
+
+out/
+
+.gradle
+!gradle/wrapper/gradle-wrapper.jar
+bin/
